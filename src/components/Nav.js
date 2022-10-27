@@ -43,6 +43,7 @@ const Nav = () => {
   // SignOut
   const SignOut = ()=>{
     auth.signOut();
+    // localStorage.setItem("isLogged", false);
     setIsLogged(false)
 }
   return (

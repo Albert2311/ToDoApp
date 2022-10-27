@@ -36,6 +36,8 @@ const Login=() => {
           if (currentUser){
             console.log(currentUser);
             return <Navigate to="/home"/>;
+            // auth.signOut();
+            // localStorage.setItem("isLogged", false)
           }
     
     
