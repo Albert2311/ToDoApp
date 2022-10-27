@@ -1,0 +1,318 @@
+*{
+    padding : 0;
+    margin : 0;
+}
+ul{
+    padding : 0;
+    margin : 0;
+}
+li{
+    list-style: none;
+}
+body{
+    /* background-color: #fff ; */
+    font-family: 'Open Sans', sans-serif;
+}
+/*-------------------thanh narbar-----------------------*/
+.slide-menu{
+    position: fixed;
+    background: #eee;
+    width: 250px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    transition: width .2s ease-in;
+    z-index: 2000;
+    box-shadow: 2px 0px #a9def945;
+    box-sizing: border-box;
+}
+.slide-menu.inactive{
+    width: 60px;
+    padding: 30px 15px;
+}
+.slide-menu.inactive .top-section .toggle-menu-btn{
+    right: -50px;
+}
+.slide-menu .top-section{
+    position: relative;
+}
+.slide-menu .top-section .logo{
+    width: 90px;
+    height: 35px;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+}
+.slide-menu.inactive .top-section .logo{
+    height: 32px;
+    width: 30px;
+}
+.slide-menu .top-section .logo img{
+    max-width: 100%;
+    min-height: 100%;
+}
+.slide-menu.inactive .top-section .logo img{
+    max-width: 100%;
+    
+}
+/*nut arrow*/
+.slide-menu .top-section .toggle-menu-btn{
+    color: #8b9afb;
+    font-size: 20px;
+    position: absolute;
+    top : 50%;
+    right : 0;
+    transform: transLateY(-45%);
+    cursor: pointer;
+}
+.slide-menu .searching{
+    color: #fff;
+    position: relative;
+}
+.slide-menu.inactive .searching{
+    display: none;
+}
+.slide-menu .searching .searching-btn{
+    width: 40px;
+    height: 40px;
+    position : absolute;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #666;
+    top: 50%;
+    transform: translateY(-70%);
+    left: 0;
+}
+.slide-menu .searching input[type=text]{
+    border : 0;
+    outline: none;
+    height : 35px;
+    background: #333;
+    border-radius: 5px;
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 40px;
+    color: #fff;
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background: #666;
+    margin: 20px 0px 20px;
+}
+.slide-menu.inactive .divider{
+    margin: 20px 0px 20px;
+}
+/*-------------------thanh narbar-----------------------*/
+/*--------------------MENU MENU-----------------------*/
+.narbar{
+    padding-top: 20px;
+}
+.narbar-active{
+    /* border-left: 3px solid ; */
+    width: 100%;
+    padding: 0.9rem;
+    padding-left: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    transition: 0.2s all ease-in-out;
+}
+.narbar li .active{
+    color:#560bad;
+    transition: 0.5s ease;
+    border-left: 3px solid;
+    transition: 0.5s ease; 
+}
+.narbar-active.active{
+     border-left: 3px solid #560bad;
+     animation: glows 0.2s ease-in forwards;
+     margin-left: 0px;
+}
+@keyframes glows {
+    to {
+        margin-left: 15px;
+    }
+}
+
+.narbar-active:hover {
+    background-color: rgba(136, 65, 188, 0.1);
+    /* color: #560bad; */
+}
+.narbar-active:hover h1 , .narbar-active:hover span{
+    color: #560bad;
+}
+.narbar-active h1{
+    color:rgb(161, 161, 161);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.narbar-active span{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color:#666;
+}
+.narbar-active.active h1{
+    color:#560bad;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.narbar-active.active span{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color:#560bad;
+}
+/*Menu Close*/
+/*Menu Close*/
+/*Menu Close*/
+/*Menu Close*/
+.narbar-active-close{
+    width: 100%;
+    padding: 0.5rem;
+    /* padding-left: 1rem; */
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    transition: 0.2s all ease-in-out;
+}
+.narbar-active-close.active{
+    border-left: 3px solid #560bad;
+    justify-content: flex-start;
+    animation: glows1 0.2s ease-in forwards;
+    margin-left: 0px;
+}
+@keyframes glows1 {
+    to {
+        margin-left: 3px;
+    }
+}
+.narbar-active-close:hover {
+    background-color: rgba(136, 65, 188, 0.1);
+}
+.narbar-active-close:hover h1 , .narbar-active-close:hover span{
+    color: #560bad;
+}
+.narbar-active-close h1{
+    color:rgb(161, 161, 161);
+    font-size: 1rem;
+    font-weight: 300;
+}
+.narbar-active-close span{
+    font-size: 1.2rem;
+    /* margin-right: 1rem; */
+    color:#666;
+}
+.narbar-active-close.active h1{
+    color:#560bad;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.narbar-active-close.active span{
+    font-size: 1.2rem;
+    /* margin-right: 1rem; */
+    color:#560bad;
+}
+
+/************ Banner Css ************/
+.aligh-items-center{
+    display: flex;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+.banner {
+    margin-top: 0;
+    float:right;
+    display: flex;  
+    justify-items: center;
+    justify-content: center;
+    width:95.4%;
+    height:700px;
+    padding: 100px 0 100px 0;
+    /* background-image: url('../img/banner-bg.png'); */
+    background-image: url('../img/Picture1.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+    color: #fff;
+  }
+  .banner h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+    color:#eee;
+  }
+  .banner p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+    text-align: start;
+  }
+  .banner a{
+    color: yellow;
+    text-underline-position: below;
+  }
+  .banner a:hover{
+    text-decoration: underline;
+  }
+  .banner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+  }
+  .banner button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+  }
+  .banner button:hover svg {
+    margin-left: 25px;
+  }
+  .banner img {
+    animation: updown 3s linear infinite;
+    width: 400px; 
+  }
+  @keyframes updown {
+      0% {
+          transform: translateY(-20px);
+      }
+      50% {
+          transform: translateY(20px);
+      }
+      100% {
+          transform: translateY(-20px);
+      }
+  }
+  .txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+  }
+  
