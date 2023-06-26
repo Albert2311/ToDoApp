@@ -1,4 +1,8 @@
-![image](https://github.com/Albert2311/ToDoApp/assets/96101257/b7a43965-6afd-4615-8971-3f2d4ad9ead8)LINK DEMO: https://todoapp-alpha-eight.vercel.app/
+![image](https://github.com/Albert2311/ToDoApp/assets/96101257/b7a43965-6afd-4615-8971-3f2d4ad9ead8)
+![image](https://github.com/Albert2311/ToDoApp/assets/96101257/6f7e2c52-ed8f-4369-9b14-2b347b85e213)
+![image](https://github.com/Albert2311/ToDoApp/assets/96101257/bb1766f8-f845-4e42-8182-b2854bf8f324)
+
+LINK DEMO: https://todoapp-alpha-eight.vercel.app/
 
 # Getting Started with Create React App
 
